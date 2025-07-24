@@ -4,7 +4,7 @@ import strawberriesDisplay from "@/assets/strawberries-display.jpg";
 
 export const Hero = () => {
   const scrollToCheckout = () => {
-    document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
+    window.open('https://go.perfectpay.com.br/PPU38CPT2U9', '_blank');
   };
 
   return (

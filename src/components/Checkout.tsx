@@ -4,8 +4,7 @@ import { CheckCircle, CreditCard, Lock, Star, Clock } from "lucide-react";
 
 export const Checkout = () => {
   const handlePurchase = () => {
-    // Aqui você integraria com o sistema de pagamento
-    alert("Redirecionando para o pagamento...");
+    window.open('https://go.perfectpay.com.br/PPU38CPT2U9', '_blank');
   };
 
   const features = [

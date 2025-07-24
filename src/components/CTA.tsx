@@ -3,7 +3,7 @@ import { Clock, TrendingUp } from "lucide-react";
 
 export const CTA = () => {
   const scrollToCheckout = () => {
-    document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
+    window.open('https://go.perfectpay.com.br/PPU38CPT2U9', '_blank');
   };
 
   return (
