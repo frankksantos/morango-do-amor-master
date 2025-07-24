@@ -1,14 +1,11 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-woman-strawberry.jpg";
 import strawberriesDisplay from "@/assets/strawberries-display.jpg";
-
 export const Hero = () => {
   const scrollToCheckout = () => {
     window.open('https://go.perfectpay.com.br/PPU38CPT2U9', '_blank');
   };
-
-  return (
-    <section className="relative min-h-screen bg-gradient-to-br from-background via-secondary to-muted overflow-hidden">
+  return <section className="relative min-h-screen bg-gradient-to-br from-background via-secondary to-muted overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary)/0.1),transparent)] pointer-events-none" />
       
@@ -29,25 +26,15 @@ export const Hero = () => {
           </p>
           
           {/* CTA Principal */}
-          <Button 
-            variant="hero"
-            size="xl"
-            onClick={scrollToCheckout}
-            className="mb-12 shadow-xl"
-          >
-            QUERO APRENDER POR APENAS R$19,90
-          </Button>
+          <Button variant="hero" size="xl" onClick={scrollToCheckout} className="mb-12 shadow-xl">QUERO APRENDER
+        </Button>
         </div>
 
         {/* Imagens em Destaque */}
         <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
           {/* Mulher com Morango */}
           <div className="relative">
-            <img 
-              src={heroImage} 
-              alt="Mulher sorrindo segurando morango caramelizado"
-              className="w-full h-auto rounded-2xl shadow-2xl"
-            />
+            <img src={heroImage} alt="Mulher sorrindo segurando morango caramelizado" className="w-full h-auto rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
               <span className="font-bold text-lg">💰 Até R$3.000/mês</span>
             </div>
@@ -55,11 +42,7 @@ export const Hero = () => {
           
           {/* Morangos Prontos */}
           <div className="relative">
-            <img 
-              src={strawberriesDisplay} 
-              alt="Morangos caramelizados gourmet"
-              className="w-full h-auto rounded-2xl shadow-2xl"
-            />
+            <img src={strawberriesDisplay} alt="Morangos caramelizados gourmet" className="w-full h-auto rounded-2xl shadow-2xl" />
             <div className="absolute -top-4 -left-4 bg-accent text-accent-foreground p-4 rounded-xl shadow-lg animate-pulse-glow">
               <span className="font-bold text-lg">✨ Resultado Profissional</span>
             </div>
@@ -86,6 +69,5 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
