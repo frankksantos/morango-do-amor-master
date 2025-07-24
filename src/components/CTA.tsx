@@ -21,13 +21,13 @@ export const CTA = () => {
           </div>
 
           {/* Título principal */}
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight px-2">
             Última Chance de Garantir<br />
             <span className="text-yellow-300">Seu Acesso por R$19,90!</span>
           </h2>
 
           {/* Subtítulo */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+          <p className="text-lg md:text-2xl text-white/90 mb-8 leading-relaxed px-4">
             Não perca a oportunidade de transformar uma receita simples em uma{" "}
             <span className="font-bold text-yellow-300">fonte de renda mensal</span>
           </p>

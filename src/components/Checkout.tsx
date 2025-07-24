@@ -29,10 +29,10 @@ export const Checkout = () => {
         <div className="max-w-4xl mx-auto">
           {/* Título da seção */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 px-2">
               🍓 Garanta seu <span className="text-primary">Acesso Agora!</span>
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-lg md:text-xl text-muted-foreground px-4">
               Transforme sua vida financeira com o Morango do Amor Gourmet
             </p>
           </div>

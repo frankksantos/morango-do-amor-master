@@ -15,7 +15,7 @@ export const Hero = () => {
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="text-center mb-12">
           {/* Título Principal */}
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-3xl md:text-6xl font-bold text-foreground mb-6 leading-tight px-2">
             🍓 Descubra o Segredo do<br />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Morango do Amor Gourmet!
@@ -23,7 +23,7 @@ export const Hero = () => {
           </h1>
           
           {/* Subtítulo */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed px-4">
             Aprenda a fazer morangos caramelizados que vendem sozinhos e podem te render até{" "}
             <span className="font-bold text-primary">R$3.000 por mês!</span>
           </p>

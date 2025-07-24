@@ -66,37 +66,28 @@ export const Testimonials = () => {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Carrossel Principal */}
-          <div className="bg-background rounded-2xl shadow-2xl p-8 md:p-12 min-h-[400px] flex flex-col justify-center">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              {/* Foto da pessoa */}
-              <div className="flex-shrink-0">
-                <img 
-                  src={testimonials[currentTestimonial].image}
-                  alt={testimonials[currentTestimonial].name}
-                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-xl"
-                />
-              </div>
-              
+          <div className="bg-background rounded-2xl shadow-2xl p-6 md:p-12 min-h-[300px] flex flex-col justify-center">
+            <div className="text-center">
               {/* Conteúdo do depoimento */}
-              <div className="flex-1 text-center md:text-left">
+              <div className="w-full">
                 {/* Estrelas */}
-                <div className="flex justify-center md:justify-start gap-1 mb-4">
+                <div className="flex justify-center gap-1 mb-4">
                   {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-accent text-accent" />
+                    <Star key={i} className="w-5 h-6 md:w-6 md:h-6 fill-accent text-accent" />
                   ))}
                 </div>
                 
                 {/* Depoimento */}
-                <blockquote className="text-lg md:text-xl text-foreground mb-6 leading-relaxed">
+                <blockquote className="text-base md:text-xl text-foreground mb-6 leading-relaxed px-4">
                   "{testimonials[currentTestimonial].text}"
                 </blockquote>
                 
                 {/* Nome e ganhos */}
                 <div>
-                  <cite className="text-xl font-bold text-primary not-italic">
+                  <cite className="text-lg md:text-xl font-bold text-primary not-italic block mb-3">
                     {testimonials[currentTestimonial].name}
                   </cite>
-                  <div className="bg-accent text-accent-foreground px-4 py-2 rounded-full inline-block mt-2 font-semibold">
+                  <div className="bg-accent text-accent-foreground px-3 py-2 md:px-4 md:py-2 rounded-full inline-block font-semibold text-sm md:text-base">
                     💰 {testimonials[currentTestimonial].earnings}
                   </div>
                 </div>
