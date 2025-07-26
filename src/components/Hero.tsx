@@ -25,19 +25,6 @@ export const Hero = () => {
             <span className="font-bold text-primary">R$3.000 por mês!</span>
           </p>
           
-          {/* Vídeo de Vendas */}
-          <div className="mb-8 max-w-4xl mx-auto px-4">
-            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black">
-              <iframe
-                src="https://www.youtube.com/embed/svZipW4x_4g?rel=0&modestbranding=1&showinfo=0"
-                title="Morango do Amor Gourmet - Vídeo de Vendas"
-                className="absolute inset-0 w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </div>
-          
           {/* CTA Principal */}
           <Button variant="hero" size="xl" onClick={scrollToCheckout} className="mb-12 shadow-xl">QUERO APRENDER
         </Button>
